@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b35">
+  <meta name="description" content="VETANATOMY 3D: anatomía veterinaria educativa">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>VETANATOMY 3D</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">V3D</div>
+    <div><h1>VETANATOMY 3D</h1><p>Anatomía veterinaria interactiva</p></div>
+  </header>
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">PLATAFORMA DE ESTUDIO</p>
+      <h2>Explora la anatomía animal</h2>
+      <p>Selecciona una especie y un sistema para comenzar a estudiar.</p>
+    </section>
+    <section class="panel">
+      <h3>1. Selecciona una especie</h3>
+      <div class="choices" id="species">
+        <button class="choice active" data-value="equino">🐎 Equino</button>
+        <button class="choice" data-value="bovino">🐄 Bovino</button>
+        <button class="choice" data-value="porcino">🐖 Porcino</button>
+      </div>
+    </section>
+    <section class="panel">
+      <h3>2. Selecciona un sistema</h3>
+      <div class="system-grid" id="systems">
+        <button class="system active" data-value="óseo">Óseo</button>
+        <button class="system" data-value="muscular">Muscular</button>
+        <button class="system" data-value="digestivo">Digestivo</button>
+        <button class="system" data-value="respiratorio">Respiratorio</button>
+        <button class="system" data-value="circulatorio">Circulatorio</button>
+        <button class="system" data-value="nervioso">Nervioso</button>
+        <button class="system" data-value="urinario">Urinario</button>
+        <button class="system" data-value="reproductor">Reproductor</button>
+      </div>
+    </section>
+    <section class="panel study-panel">
+      <div class="study-heading"><div><p class="eyebrow">CONTENIDO DE ESTUDIO</p><h3 id="study-title">Sistema óseo · Equino</h3></div><span class="tag">MÓDULO 01</span></div>
+      <p id="study-description">Estudia la organización del esqueleto, sus principales huesos y su función de sostén y protección.</p>
+      <div class="viewer">
+        <div class="viewer-icon">🦴</div>
+        <h3>Visor anatómico 3D</h3>
+        <p>El espacio para el modelo 3D se incorporará en una próxima etapa.</p>
+        <span class="coming">MODELO 3D EN DESARROLLO</span>
+      </div>
+      <div class="viewer-controls">
+        <button disabled>↻ Girar modelo</button>
+        <button disabled>◉ Mostrar capas</button>
+        <button disabled>＋ Acercar</button>
+      </div>
+      <p class="note">Los controles estarán disponibles cuando incorporemos modelos anatómicos 3D verificados.</p>
+    </section>
+    <section class="panel">
+      <h3>Objetivo de aprendizaje</h3>
+      <p>Reconocer estructuras anatómicas, comprender su función y comparar las diferencias entre especies domésticas.</p>
+    </section>
+  </main>
+  <footer>VETANATOMY 3D · Proyecto educativo en desarrollo</footer>
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(() => {}));
+    }
+  </script>
+</body>
+</html>

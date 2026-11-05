@@ -1,0 +1,10 @@
+{
+  "name": "VETANATOMY 3D",
+  "short_name": "VETANATOMY",
+  "description": "Plataforma educativa de anatomía veterinaria",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f4",
+  "theme_color": "#123b35",
+  "lang": "es"
+}
