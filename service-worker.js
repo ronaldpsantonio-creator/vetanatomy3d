@@ -1,4 +1,4 @@
-const CACHE_NAME = "vetanatomy3d-v01";
+const CACHE_NAME = "vetanatomy-equino-v02";
 const FILES = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(FILES)));

@@ -1,22 +1,17 @@
-VETANATOMY 3D - PROTOTIPO V0.1
+VETANATOMY 3D - VERSION 0.2 - MODULO EQUINO
 
-Este proyecto es una primera estructura educativa para estudiar anatomía veterinaria.
-
-CONTENIDO:
-- index.html: pantalla principal.
+CONTENIDO
+- index.html: estructura de la aplicación.
 - styles.css: diseño visual.
-- app.js: selección de especies y sistemas.
-- manifest.webmanifest: configuración de aplicación instalable.
-- service-worker.js: caché básica para uso sin conexión.
-- README.txt: estas instrucciones.
+- app.js: lecciones del sistema óseo equino y evaluación interactiva.
+- manifest.webmanifest: configuración de la aplicación web.
+- service-worker.js: caché para uso sin conexión después de cargar los archivos.
 
-PARA PUBLICAR:
-1. Sube estos seis archivos directamente a la raíz de un repositorio GitHub.
-2. Activa GitHub Pages desde Settings > Pages.
-3. Selecciona Deploy from a branch, rama main y carpeta /(root).
-4. Abre la dirección publicada en Chrome Android.
+IMPORTANTE
+Esta versión desarrolla el módulo educativo del sistema óseo equino y una evaluación de práctica.
+Los otros sistemas aparecen como módulos en preparación.
+El visor 3D real todavía no está integrado. El esquema incluido es orientativo y no es un modelo anatómico tridimensional.
 
-IMPORTANTE:
-Este prototipo todavía no contiene modelos anatómicos 3D reales ni funciones de disección.
-Los botones del visor son ilustrativos y se habilitarán en una etapa posterior.
-El funcionamiento offline requiere publicar por HTTPS y abrir la aplicación al menos una vez con internet.
+ACTUALIZACIÓN
+Reemplaza los archivos existentes del repositorio por los de este paquete, conservando los mismos nombres.
+Publica los cambios desde GitHub y abre la aplicación con conexión para que se actualice la caché.
