@@ -1,72 +1,82 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123b35">
-  <meta name="description" content="VETANATOMY 3D: plataforma educativa de anatomía veterinaria equina">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css">
-  <title>VETANATOMY 3D</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b35">
+<meta name="description" content="VETANATOMY 3D: módulo de osteología equina educativa">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="styles.css">
+<title>VETANATOMY 3D · Osteología equina</title>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand-mark">V3D</div>
-    <div><h1>VETANATOMY 3D</h1><p>Anatomía veterinaria equina</p></div>
-  </header>
-  <main>
-    <section class="welcome">
-      <p class="eyebrow">PLATAFORMA DE ESTUDIO · VERSIÓN 0.2</p>
-      <h2>Anatomía equina</h2>
-      <p>Estudia la anatomía del caballo mediante lecciones, recursos visuales y evaluaciones.</p>
-    </section>
+<header class="topbar">
+  <div class="brand-mark">V3D</div>
+  <div><h1>VETANATOMY 3D</h1><p>Anatomía veterinaria · Módulo equino</p></div>
+  <span class="version">3.0 · EN DESARROLLO</span>
+</header>
+<main>
+  <section class="welcome">
+    <p class="eyebrow">PLATAFORMA GRATUITA DE ESTUDIO</p>
+    <h2>Osteología equina avanzada</h2>
+    <p>Explora los huesos, sus relaciones articulares, movimientos y relevancia clínica. Contenido organizado para estudio universitario.</p>
+  </section>
 
-    <section class="panel">
-      <h3>1. Selecciona un sistema</h3>
-      <div class="system-grid" id="systems">
-        <button class="system active" data-value="óseo">Óseo</button>
-        <button class="system" data-value="muscular">Muscular</button>
-        <button class="system" data-value="digestivo">Digestivo</button>
-        <button class="system" data-value="respiratorio">Respiratorio</button>
-        <button class="system" data-value="circulatorio">Circulatorio</button>
-        <button class="system" data-value="nervioso">Nervioso</button>
-        <button class="system" data-value="urinario">Urinario</button>
-        <button class="system" data-value="reproductor">Reproductor</button>
-      </div>
-      <p class="note">El sistema óseo es el primer módulo desarrollado. Los demás se habilitarán progresivamente.</p>
-    </section>
+  <section class="panel">
+    <div class="section-head"><div><p class="eyebrow">RECORRIDO ANATÓMICO</p><h3>Selecciona una región</h3></div><span class="tag">EQUINO</span></div>
+    <div class="region-grid" id="region-list">
+      <button class="region active" data-region="general">General</button>
+      <button class="region" data-region="craneo">Cráneo e hioides</button>
+      <button class="region" data-region="columna">Columna</button>
+      <button class="region" data-region="torax">Tórax</button>
+      <button class="region" data-region="toracico">Miembro torácico</button>
+      <button class="region" data-region="pelviano">Miembro pelviano</button>
+    </div>
+  </section>
 
-    <section class="panel study-panel">
-      <div class="study-heading">
-        <div><p class="eyebrow">MÓDULO 01 · NIVEL AVANZADO</p><h3 id="study-title">Sistema óseo equino</h3></div>
-        <span class="tag">EQUINO</span>
-      </div>
-      <p id="study-description">Organización, descripción y función del esqueleto del caballo.</p>
-      <div id="lesson-content"></div>
-    </section>
+  <section class="panel">
+    <div class="section-head"><div><p class="eyebrow">CATÁLOGO ANATÓMICO</p><h3>Buscador de estructuras</h3></div><span id="bone-count" class="tag">Catálogo inicial</span></div>
+    <label class="sr-only" for="search">Buscar hueso</label>
+    <input id="search" class="search" type="search" placeholder="Buscar por nombre español o latino…">
+    <div id="bone-list" class="bone-list" aria-live="polite"></div>
+  </section>
 
-    <section class="panel">
-      <h3>Evaluación del módulo</h3>
-      <p>Comprueba tus conocimientos sobre la anatomía ósea equina. Selecciona una respuesta en cada pregunta y pulsa «Corregir evaluación».</p>
-      <div id="quiz"></div>
-    </section>
+  <section class="panel detail-panel" id="detail-panel">
+    <div class="section-head"><div><p class="eyebrow">FICHA ANATÓMICA</p><h3 id="detail-title">Osteología general</h3></div><span class="tag">NAV · LATÍN / ESPAÑOL</span></div>
+    <div id="detail-content"></div>
+  </section>
 
-    <section class="panel">
-      <h3>Visor anatómico 3D</h3>
-      <div class="viewer">
-        <div class="viewer-icon">🦴</div>
-        <h3>Modelo 3D en preparación</h3>
-        <p>Esta versión incorpora contenido académico y evaluación. El modelo anatómico 3D interactivo se añadirá cuando integremos un recurso tridimensional verificable y compatible.</p>
-        <span class="coming">VISOR 3D EN DESARROLLO</span>
-      </div>
-    </section>
-  </main>
-  <footer>VETANATOMY 3D · Proyecto educativo en desarrollo</footer>
-  <script src="app.js"></script>
-  <script>
-    if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-      window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(() => {}));
-    }
-  </script>
+  <section class="panel">
+    <div class="section-head"><div><p class="eyebrow">ARTROLOGÍA</p><h3>Articulaciones y movimientos</h3></div><span class="tag">CONSULTA</span></div>
+    <label class="sr-only" for="joint-region">Filtrar articulaciones</label>
+    <select id="joint-region" class="search">
+      <option value="todas">Todas las regiones</option>
+      <option value="cabeza">Cabeza y cuello</option>
+      <option value="toracico">Miembro torácico</option>
+      <option value="pelviano">Miembro pelviano</option>
+      <option value="axial">Columna y tórax</option>
+    </select>
+    <div id="joint-list" class="joint-list"></div>
+  </section>
+
+  <section class="panel">
+    <div class="section-head"><div><p class="eyebrow">AUTOEVALUACIÓN</p><h3>Comprueba lo aprendido</h3></div><span class="tag">QUIZ</span></div>
+    <div id="quiz"></div>
+  </section>
+
+  <section class="panel">
+    <h3>Alcance y rigor académico</h3>
+    <p>Esta versión incorpora la estructura funcional del módulo, un catálogo inicial de estructuras, fichas anatómicas, articulaciones y evaluación. La ampliación y revisión de cada hueso, accidente anatómico, ligamento, inserción y dato radiológico continuará por entregas; no se presenta este catálogo inicial como inventario definitivo de todos los huesos del caballo.</p>
+    <p class="note">La nomenclatura latina se contrasta con la Nomina Anatomica Veterinaria (NAV). Las cifras óseas pueden variar por variación individual y criterios de recuento. El visor 3D real requiere modelos digitales segmentados y con licencia compatible; todavía no está activo.</p>
+    <p class="source">Referencias base: World Association of Veterinary Anatomists (WAVA), Nomina Anatomica Veterinaria, 6.ª ed. (2017); Budras et al., Anatomy of the Horse; König & Liebich, Veterinary Anatomy of Domestic Mammals.</p>
+  </section>
+</main>
+<footer>VETANATOMY 3D · Proyecto educativo gratuito · Versión 3.0 en desarrollo</footer>
+<script src="app.js"></script>
+<script>
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(() => {}));
+}
+</script>
 </body>
 </html>

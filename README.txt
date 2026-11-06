@@ -1,17 +1,35 @@
-VETANATOMY 3D - VERSION 0.2 - MODULO EQUINO
+VETANATOMY 3D · VERSIÓN 3.0 · BASE DE OSTEología EQUINA
 
-CONTENIDO
+CONTENIDO DEL PAQUETE
 - index.html: estructura de la aplicación.
-- styles.css: diseño visual.
-- app.js: lecciones del sistema óseo equino y evaluación interactiva.
-- manifest.webmanifest: configuración de la aplicación web.
-- service-worker.js: caché para uso sin conexión después de cargar los archivos.
+- styles.css: diseño adaptable a teléfonos Android.
+- app.js: catálogo anatómico inicial, fichas, articulaciones y cuestionario.
+- manifest.webmanifest: configuración instalable.
+- service-worker.js: caché básica para uso sin conexión.
+
+FUNCIONES INCLUIDAS
+- Navegación por regiones anatómicas.
+- Búsqueda por nombre español o latino.
+- Fichas anatómicas con clasificación, ubicación, descripción, accidentes,
+  articulaciones, movimientos y relevancia clínica.
+- Catálogo inicial de huesos y conjuntos óseos.
+- Consulta de articulaciones por región.
+- Cuestionario interactivo con retroalimentación.
 
 IMPORTANTE
-Esta versión desarrolla el módulo educativo del sistema óseo equino y una evaluación de práctica.
-Los otros sistemas aparecen como módulos en preparación.
-El visor 3D real todavía no está integrado. El esquema incluido es orientativo y no es un modelo anatómico tridimensional.
+Esta es una base funcional de la versión 3.0, no la edición académica definitiva.
+El catálogo todavía no contiene la descripción exhaustiva individual de cada
+hueso, cada accidente, cada ligamento y cada inserción muscular del caballo.
+Esos contenidos deben ampliarse y verificarse progresivamente con NAV y textos
+de anatomía veterinaria. El visor 3D real no está incluido: requiere modelos
+segmentados y licencias compatibles.
 
-ACTUALIZACIÓN
-Reemplaza los archivos existentes del repositorio por los de este paquete, conservando los mismos nombres.
-Publica los cambios desde GitHub y abre la aplicación con conexión para que se actualice la caché.
+INSTALACIÓN
+1. Descomprime el ZIP.
+2. En GitHub, abre el repositorio y la rama correcta.
+3. Sube los cinco archivos a la raíz, reemplazando los archivos homónimos.
+4. Revisa los cambios antes de confirmar el commit.
+5. Abre la aplicación publicada y actualiza la página.
+
+No reemplaces archivos hasta confirmar que esta rama corresponde a la versión
+que estás usando. Conserva una copia de seguridad del ZIP anterior.
