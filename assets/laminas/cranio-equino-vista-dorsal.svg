@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-labelledby="t d">
+<title id="t">Cráneo equino, vista dorsal esquemática</title><desc id="d">Lámina docente original que orienta las regiones óseas principales del cráneo equino desde dorsal.</desc>
+<rect width="1100" height="760" fill="#f7f6ef"/><text x="55" y="58" font-family="Arial" font-size="28" font-weight="700" fill="#183d37">CRÁNEO EQUINO · VISTA DORSAL</text><text x="56" y="88" font-family="Arial" font-size="16" fill="#53665f">Orientación topográfica de neurocráneo y esqueleto facial</text>
+<g stroke="#554b3e" stroke-width="5" stroke-linejoin="round">
+<path d="M420 145 Q550 90 680 145 L720 255 Q700 340 650 400 L450 400 Q400 340 380 255Z" fill="#dfc39d"/>
+<path d="M450 390 Q550 360 650 390 L635 480 Q610 520 590 550 L510 550 Q490 520 465 480Z" fill="#c8d9bd"/>
+<path d="M490 535 Q550 515 610 535 L600 650 Q550 690 500 650Z" fill="#e5d6a9"/>
+<path d="M385 245 Q330 255 290 315 Q300 365 365 390 L425 350Z" fill="#c8d5df"/>
+<path d="M715 245 Q770 255 810 315 Q800 365 735 390 L675 350Z" fill="#c8d5df"/>
+<path d="M410 150 Q350 170 340 235 L390 270 L440 215Z" fill="#d8b7a0"/>
+<path d="M690 150 Q750 170 760 235 L710 270 L660 215Z" fill="#d8b7a0"/>
+<path d="M470 390 Q550 370 630 390" fill="none" stroke="#8d765d" stroke-width="3" stroke-dasharray="8 7"/>
+<path d="M500 545 Q550 555 600 545" fill="none" stroke="#8d765d" stroke-width="3"/>
+</g>
+<g fill="#f7f6ef" stroke="#554b3e" stroke-width="7"><ellipse cx="360" cy="315" rx="48" ry="62"/><ellipse cx="740" cy="315" rx="48" ry="62"/></g>
+<g stroke="#52665e" stroke-width="2.5" fill="none"><path d="M550 125 L550 660" stroke-dasharray="9 7"/><path d="M330 205 L220 165"/><path d="M550 205 L830 150"/><path d="M550 440 L850 455"/><path d="M360 315 L170 330"/><path d="M740 315 L930 330"/><path d="M550 600 L850 625"/></g>
+<g font-family="Arial" font-size="19" font-weight="700" fill="#213b35" stroke="#f7f6ef" stroke-width="5" paint-order="stroke">
+<text x="80" y="155">Frontal</text><text x="840" y="145">Parietal</text><text x="75" y="335">Órbita derecha</text><text x="855" y="335">Órbita izquierda</text><text x="865" y="465">Arco cigomático</text><text x="860" y="635">Huesos nasales</text><text x="80" y="610">Región rostral</text>
+</g><g font-family="Arial" font-size="15" fill="#456057"><text x="70" y="700">ROSTRAL ↑</text><text x="875" y="700">↓ CAUDAL</text><text x="270" y="735">Esquema de orientación; contornos y suturas no están a escala ni son diagnósticos.</text></g></svg>
