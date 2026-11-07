@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Cráneo equino, vista lateral esquemática</title>
+<desc id="desc">Lámina docente original con perfil alargado del cráneo del caballo y regiones óseas coloreadas e identificadas.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#fbfaf5"/><stop offset="1" stop-color="#e9eee7"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<rect width="1200" height="760" fill="url(#bg)"/>
+<text x="55" y="62" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#183d37">CRÁNEO EQUINO · VISTA LATERAL</text>
+<text x="56" y="94" font-family="Arial,sans-serif" font-size="16" fill="#53665f">Lámina osteológica original · esquema topográfico para orientación</text>
+<ellipse cx="585" cy="505" rx="455" ry="32" fill="#344b43" opacity=".13" filter="url(#shadow)"/>
+<!-- Neurocranium and facial skeleton silhouette -->
+<g stroke="#594c3c" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+ <!-- occipital -->
+ <path d="M820 245 Q865 260 875 320 L854 390 Q824 405 793 380 L775 305Z" fill="#d7b28c"/>
+ <!-- parietal -->
+ <path d="M625 165 Q735 135 815 215 L818 285 Q780 315 725 305 L642 270Z" fill="#e8c99f"/>
+ <!-- frontal -->
+ <path d="M425 180 Q520 130 630 165 L648 270 Q590 300 525 282 L445 250Z" fill="#c7d8b9"/>
+ <!-- nasal -->
+ <path d="M130 250 Q245 175 430 180 L450 250 Q350 275 245 300 L140 315 Q112 295 130 250Z" fill="#e6d6a8"/>
+ <!-- maxilla -->
+ <path d="M150 315 Q275 285 445 260 Q535 285 580 350 L535 430 Q430 440 330 420 L190 395 Q145 375 150 315Z" fill="#d8b8a0"/>
+ <!-- incisive -->
+ <path d="M82 300 Q125 282 158 312 L190 395 Q165 414 132 393 L88 352Z" fill="#c8d7d0"/>
+ <!-- zygomatic -->
+ <path d="M505 290 Q610 275 700 305 Q750 328 790 370 L770 400 Q715 375 675 365 L575 365Z" fill="#c4d0df"/>
+ <!-- temporal -->
+ <path d="M710 300 Q770 285 815 315 L830 365 Q800 392 765 380 L720 350Z" fill="#d8c6e2"/>
+ <!-- orbit -->
+ <ellipse cx="680" cy="285" rx="54" ry="67" fill="#f7f5ee" stroke="#594c3c" stroke-width="7"/>
+ <ellipse cx="680" cy="285" rx="34" ry="45" fill="#9aa99f" opacity=".22" stroke="none"/>
+ <!-- mandible -->
+ <path d="M180 425 Q320 470 475 475 Q620 480 730 440 Q775 420 800 390 L825 425 Q805 485 745 515 Q600 560 430 540 Q280 525 190 480Z" fill="#c9d8cf"/>
+ <path d="M745 505 Q780 475 805 430 L830 440 Q825 510 785 545 L730 548Z" fill="#b8cbbf"/>
+ <!-- teeth -->
+ <path d="M220 410 l18 38 20 -33 20 38 20 -34 20 37 20 -32 20 35 20 -30 20 32" fill="#fffdf4" stroke="#8a7964" stroke-width="3"/>
+ <path d="M405 440 l18 33 20 -30 20 33 20 -28 20 29 20 -25" fill="#fffdf4" stroke="#8a7964" stroke-width="3"/>
+ <!-- zygomatic arch curve -->
+ <path d="M530 330 Q620 355 710 345 Q760 345 790 380" fill="none" stroke="#6c5c4b" stroke-width="12"/>
+ <!-- foramen magnum indication -->
+ <ellipse cx="843" cy="344" rx="17" ry="28" fill="#5a4b3c" opacity=".75"/>
+</g>
+<!-- sutures and guide lines -->
+<g fill="none" stroke="#8b735c" stroke-width="2.5" stroke-dasharray="7 6" opacity=".8">
+ <path d="M430 185 Q445 215 450 250"/><path d="M625 170 Q610 215 648 270"/><path d="M820 245 Q790 280 818 315"/>
+</g>
+<!-- Labels -->
+<g font-family="Arial,sans-serif" fill="#213b35" font-size="18" font-weight="700" stroke="#fbfaf5" stroke-width="5" paint-order="stroke">
+ <text x="85" y="205">Hueso nasal</text><path d="M205 210 L260 245" stroke="#52665e" stroke-width="2.5" fill="none"/>
+ <text x="280" y="145">Frontal</text><path d="M345 150 L390 190" stroke="#52665e" stroke-width="2.5" fill="none"/>
+ <text x="545" y="120">Parietal</text><path d="M610 126 L675 170" stroke="#52665e" stroke-width="2.5" fill="none"/>
+ <text x="850" y="205">Occipital</text><path d="M875 213 L845 270" stroke="#52665e" stroke-width="2.5" fill="none"/>
+ <text x="70" y="470">Incisivo</text><path d="M145 458 L145 390" stroke="#52665e" stroke-width="2.5" fill="none"/>
+ <text x="275" y="355">Maxilar</text><path d="M335 360 L360 395" stroke="#52665e" stroke-width="2.5" fill="none"/>
+ <text x="555" y="220">Órbita</text><path d="M625 225 L655 250" stroke="#52665e" stroke-width="2.5" fill="none"/>
+ <text x="760" y="455">Arco cigomático</text><path d="M770 440 L735 370" stroke="#52665e" stroke-width="2.5" fill="none"/>
+ <text x="430" y="605">Mandíbula</text><path d="M505 585 L520 530" stroke="#52665e" stroke-width="2.5" fill="none"/>
+</g>
+<!-- Orientation -->
+<g font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#35564b">
+ <text x="70" y="690">ROSTRAL ←</text><text x="970" y="690">→ CAUDAL</text>
+ <text x="535" y="720" font-size="13" font-weight="400" fill="#68776f">Representación esquemática: no usar para diagnóstico ni como delimitación exacta de suturas.</text>
+</g>
+</svg>
