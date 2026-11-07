@@ -122,3 +122,4 @@ function setModuleView(view){
 document.querySelectorAll(".module-tab").forEach(tab=>{
   tab.addEventListener("click",()=>setModuleView(tab.dataset.view));
 });
+setModuleView("osteology");
