@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="t d">
+<title id="t">Mapa topográfico original del cráneo equino</title>
+<desc id="d">Esquema lateral simplificado que ubica grupos de huesos del neurocráneo y del esqueleto facial. No representa límites suturales exactos ni sustituye un atlas anatómico.</desc>
+<defs>
+ <linearGradient id="bone" x2="0" y2="1"><stop stop-color="#f3e7ce"/><stop offset="1" stop-color="#d8c5a2"/></linearGradient>
+ <linearGradient id="shade" x2="1" y2="1"><stop stop-color="#d6c5a8"/><stop offset="1" stop-color="#b69d7b"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#30443a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1200" height="760" rx="28" fill="#f7f8f3"/>
+<text x="56" y="62" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#183b33">CRÁNEO EQUINO · MAPA TOPOGRÁFICO</text>
+<text x="56" y="94" font-family="Arial,sans-serif" font-size="16" fill="#63766d">Vista lateral esquemática · identificación regional de huesos</text>
+<!-- silhouette -->
+<g filter="url(#shadow)" stroke="#806e53" stroke-width="4" stroke-linejoin="round">
+ <path d="M150 350 C180 265 310 205 470 190 C570 120 730 115 845 165 C920 200 950 255 950 315 L1015 350 C1060 372 1082 408 1060 440 C1037 470 980 472 935 457 L870 485 C785 526 690 540 590 520 L465 492 C390 505 305 486 250 445 C210 416 170 390 150 350Z" fill="url(#bone)"/>
+ <path d="M150 350 C205 300 300 282 395 290 C460 296 520 320 565 358 L530 450 C430 482 315 470 245 425 C200 398 170 377 150 350Z" fill="#e8d8bb"/>
+ <path d="M430 220 C500 160 600 148 690 158 L710 274 C630 295 550 300 475 280Z" fill="#d9c7a6"/>
+ <path d="M695 157 C780 145 865 184 900 240 L865 330 L735 320 L710 275Z" fill="#cbb895"/>
+ <path d="M865 330 C915 300 965 320 1007 354 L1030 420 C985 445 935 432 900 405Z" fill="#d7c6a7"/>
+ <path d="M390 292 C450 276 510 288 565 358 L530 450 C465 440 425 400 390 350Z" fill="#c5d7c7"/>
+ <path d="M245 425 C330 455 420 466 530 450 L590 520 C475 545 360 530 280 480Z" fill="#e1c9ad"/>
+ <path d="M570 358 C620 315 680 295 735 320 L780 430 C710 468 620 475 530 450Z" fill="#b9cdbd"/>
+ <path d="M735 320 C790 285 850 292 900 330 L900 405 C845 430 810 440 780 430Z" fill="#d5bfa0"/>
+ <path d="M940 457 C970 470 1010 475 1040 460 L1070 500 C1030 535 980 535 930 505Z" fill="#d0b58f"/>
+ <path d="M950 315 C975 286 1005 292 1025 316 C1040 338 1030 358 1015 370" fill="none" stroke="#9b8260" stroke-width="10"/>
+ <path d="M320 350 C360 325 390 328 410 355 C425 378 410 410 380 418 C345 425 320 395 320 350Z" fill="#f7f8f3" stroke-width="5"/>
+ <path d="M150 350 C115 342 95 350 78 372 C105 393 132 400 164 395" fill="#e4d2b3"/>
+ <path d="M250 445 C320 510 435 560 565 560 C680 560 770 535 855 490" fill="none" stroke="#9b8260" stroke-width="5"/>
+</g>
+<!-- labels -->
+<g font-family="Arial,sans-serif" font-size="18" fill="#183b33" stroke="#537568" stroke-width="2">
+ <path d="M580 160 L580 122 L525 122" fill="none"/><text x="515" y="116" text-anchor="end" stroke="none" font-weight="700">Parietal</text>
+ <path d="M770 205 L800 140 L865 140" fill="none"/><text x="875" y="146" stroke="none" font-weight="700">Occipital</text>
+ <path d="M520 245 L480 160 L390 160" fill="none"/><text x="380" y="166" text-anchor="end" stroke="none" font-weight="700">Frontal</text>
+ <path d="M860 290 L920 235 L1010 235" fill="none"/><text x="1020" y="241" stroke="none" font-weight="700">Temporal</text>
+ <path d="M430 330 L360 250 L270 250" fill="none"/><text x="260" y="256" text-anchor="end" stroke="none" font-weight="700">Lagrimal / cigomático</text>
+ <path d="M310 380 L230 310 L145 310" fill="none"/><text x="135" y="316" text-anchor="end" stroke="none" font-weight="700">Maxilar</text>
+ <path d="M210 420 L160 510 L90 510" fill="none"/><text x="80" y="516" text-anchor="end" stroke="none" font-weight="700">Incisivo</text>
+ <path d="M600 465 L630 590 L720 590" fill="none"/><text x="730" y="596" stroke="none" font-weight="700">Mandíbula (referencia)</text>
+ <path d="M720 390 L780 555 L900 555" fill="none"/><text x="910" y="561" stroke="none" font-weight="700">Arco cigomático</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="15" fill="#64766d">
+ <text x="58" y="665">Esquema didáctico original: los colores indican regiones aproximadas, no suturas exactas.</text>
+ <text x="58" y="690">Para localizar forámenes, canales, senos y superficies articulares consulta cada ficha y una pieza anatómica.</text>
+ <text x="58" y="724" font-weight="700" fill="#9a5d35">No usar como imagen diagnóstica ni como sustituto de una lámina anatómica detallada.</text>
+</g>
+</svg>
