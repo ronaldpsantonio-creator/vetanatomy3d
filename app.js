@@ -55,7 +55,11 @@ const quizQuestions=[
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function renderBones(){
  const q=document.getElementById("search").value.trim().toLowerCase();
- const filtered=bones.filter(b=>{\n  const inRegion=currentRegion==="general"||b.region===currentRegion||\n    (currentRegion==="cabeza_cuello"&&(b.region==="craneo"||b.id==="atlas"||b.id==="axis"));\n  return inRegion&&(!q||[b.name,b.latin,b.location].join(" ").toLowerCase().includes(q));\n });
+ const filtered=bones.filter(b=>{
+  const inRegion=currentRegion==="general"||b.region===currentRegion||
+    (currentRegion==="cabeza_cuello"&&(b.region==="craneo"||b.id==="atlas"||b.id==="axis"));
+  return inRegion&&(!q||[b.name,b.latin,b.location].join(" ").toLowerCase().includes(q));
+ });
  document.getElementById("bone-count").textContent=`${filtered.length} fichas iniciales`;
  const list=document.getElementById("bone-list");
  list.innerHTML=filtered.length?filtered.map(b=>`<button class="bone-item ${selectedBone===b.id?"active":""}" data-id="${b.id}"><span>${esc(b.name)}<small class="latin">${esc(b.latin)}</small></span><span aria-hidden="true">›</span></button>`).join(""):`<p class="note">No se encontraron estructuras en esta búsqueda. Prueba otro término o región.</p>`;
