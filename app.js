@@ -90,3 +90,18 @@ document.querySelectorAll(".region").forEach(btn=>btn.addEventListener("click",(
 document.getElementById("search").addEventListener("input",renderBones);
 document.getElementById("joint-region").addEventListener("change",renderJoints);
 renderGeneral();renderBones();renderJoints();renderQuiz();
+
+
+// V4 · Navegación del menú principal y módulo esquelético
+const homeScreen=document.getElementById("system-home");
+const skeletalScreen=document.getElementById("system-skeletal");
+document.getElementById("open-skeletal").addEventListener("click",()=>{
+  homeScreen.hidden=true;
+  skeletalScreen.hidden=false;
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+document.getElementById("back-home").addEventListener("click",()=>{
+  skeletalScreen.hidden=true;
+  homeScreen.hidden=false;
+  window.scrollTo({top:0,behavior:"smooth"});
+});
