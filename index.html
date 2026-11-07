@@ -46,13 +46,18 @@
       <button class="back-button" id="back-home">← Menú principal</button>
       <span class="tag">EQUINO · SISTEMA ESQUELÉTICO</span>
     </div>
+    <nav class="module-tabs" aria-label="Secciones del sistema esquelético">
+      <button class="module-tab active" data-view="osteology" aria-selected="true">Osteología</button>
+      <button class="module-tab" data-view="arthrology" aria-selected="false">Artrología</button>
+      <button class="module-tab" data-view="assessment" aria-selected="false">Autoevaluación</button>
+    </nav>
   <section class="welcome">
     <p class="eyebrow">PLATAFORMA GRATUITA DE ESTUDIO</p>
     <h2>Osteología equina avanzada</h2>
     <p>Explora los huesos, sus relaciones articulares, movimientos y relevancia clínica. Contenido organizado para estudio universitario.</p>
   </section>
 
-  <section class="panel">
+  <section class="panel" data-module-view="osteology">
     <div class="section-head"><div><p class="eyebrow">RECORRIDO ANATÓMICO</p><h3>Selecciona una región</h3></div><span class="tag">EQUINO</span></div>
     <div class="region-grid" id="region-list">
       <button class="region active" data-region="general">General</button>
@@ -64,19 +69,19 @@
     </div>
   </section>
 
-  <section class="panel">
+  <section class="panel" data-module-view="osteology">
     <div class="section-head"><div><p class="eyebrow">CATÁLOGO ANATÓMICO</p><h3>Buscador de estructuras</h3></div><span id="bone-count" class="tag">Catálogo inicial</span></div>
     <label class="sr-only" for="search">Buscar hueso</label>
     <input id="search" class="search" type="search" placeholder="Buscar por nombre español o latino…">
     <div id="bone-list" class="bone-list" aria-live="polite"></div>
   </section>
 
-  <section class="panel detail-panel" id="detail-panel">
+  <section class="panel detail-panel" id="detail-panel" data-module-view="osteology">
     <div class="section-head"><div><p class="eyebrow">FICHA ANATÓMICA</p><h3 id="detail-title">Osteología general</h3></div><span class="tag">NAV · LATÍN / ESPAÑOL</span></div>
     <div id="detail-content"></div>
   </section>
 
-  <section class="panel">
+  <section class="panel" data-module-view="arthrology">
     <div class="section-head"><div><p class="eyebrow">ARTROLOGÍA</p><h3>Articulaciones y movimientos</h3></div><span class="tag">CONSULTA</span></div>
     <label class="sr-only" for="joint-region">Filtrar articulaciones</label>
     <select id="joint-region" class="search">
@@ -89,12 +94,12 @@
     <div id="joint-list" class="joint-list"></div>
   </section>
 
-  <section class="panel">
+  <section class="panel" data-module-view="assessment">
     <div class="section-head"><div><p class="eyebrow">AUTOEVALUACIÓN</p><h3>Comprueba lo aprendido</h3></div><span class="tag">QUIZ</span></div>
     <div id="quiz"></div>
   </section>
 
-  <section class="panel">
+  <section class="panel" data-module-view="osteology">
     <h3>Alcance y rigor académico</h3>
     <p>Esta versión incorpora la estructura funcional del módulo, un catálogo inicial de estructuras, fichas anatómicas, articulaciones y evaluación. La ampliación y revisión de cada hueso, accidente anatómico, ligamento, inserción y dato radiológico continuará por entregas; no se presenta este catálogo inicial como inventario definitivo de todos los huesos del caballo.</p>
     <p class="note">La nomenclatura latina se contrasta con la Nomina Anatomica Veterinaria (NAV). Las cifras óseas pueden variar por variación individual y criterios de recuento. El visor 3D real requiere modelos digitales segmentados y con licencia compatible; todavía no está activo.</p>
