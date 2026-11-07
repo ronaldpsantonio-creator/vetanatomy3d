@@ -43,7 +43,7 @@ const joints = [
 {region:"pelviano",name:"Metatarsofalángica",latin:"Articulatio metatarsophalangea",bones:"Metatarsiano III, falange proximal y sesamoideos proximales.",type:"Sinovial condílea.",movement:"Flexión y extensión; soporte de carga durante apoyo y propulsión.",clinical:"Lesiones similares a las del menudillo torácico."}
 ];
 
-const regionNames={general:"General",craneo:"Cráneo e hioides",columna:"Columna vertebral",torax:"Tórax",toracico:"Miembro torácico",pelviano:"Miembro pelviano"};
+const regionNames={general:"General",cabeza_cuello:"Cabeza y cuello",craneo:"Cráneo e hioides",columna:"Columna vertebral",torax:"Tórax",toracico:"Miembro torácico",pelviano:"Miembro pelviano"};
 let currentRegion="general", selectedBone=null, quizIndex=0, quizScore=0, answered=false;
 const quizQuestions=[
 {q:"¿Cuál es la fórmula vertebral equina habitual?",a:["C7, T18, L6, S5, Cd 15–21","C7, T13, L6, S5, Cd 18","C7, T18, L5, S6, Cd 20"],correct:0,why:"La fórmula más habitual es 7 cervicales, 18 torácicas, 6 lumbares, 5 sacras y aproximadamente 15–21 caudales; existen variaciones."},
@@ -55,7 +55,7 @@ const quizQuestions=[
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function renderBones(){
  const q=document.getElementById("search").value.trim().toLowerCase();
- const filtered=bones.filter(b=>(currentRegion==="general"||b.region===currentRegion)&&(!q||[b.name,b.latin,b.location].join(" ").toLowerCase().includes(q)));
+ const filtered=bones.filter(b=>{\n  const inRegion=currentRegion==="general"||b.region===currentRegion||\n    (currentRegion==="cabeza_cuello"&&(b.region==="craneo"||b.id==="atlas"||b.id==="axis"));\n  return inRegion&&(!q||[b.name,b.latin,b.location].join(" ").toLowerCase().includes(q));\n });
  document.getElementById("bone-count").textContent=`${filtered.length} fichas iniciales`;
  const list=document.getElementById("bone-list");
  list.innerHTML=filtered.length?filtered.map(b=>`<button class="bone-item ${selectedBone===b.id?"active":""}" data-id="${b.id}"><span>${esc(b.name)}<small class="latin">${esc(b.latin)}</small></span><span aria-hidden="true">›</span></button>`).join(""):`<p class="note">No se encontraron estructuras en esta búsqueda. Prueba otro término o región.</p>`;
@@ -86,7 +86,7 @@ function renderQuiz(){
  document.querySelectorAll(".answer").forEach(btn=>btn.onclick=()=>{if(answered)return;answered=true;const i=Number(btn.dataset.i);const ok=i===q.correct;if(ok)quizScore++;document.querySelectorAll(".answer").forEach((b,n)=>{b.disabled=true;if(n===q.correct)b.classList.add("correct");else if(n===i)b.classList.add("wrong");});const f=document.getElementById("quiz-feedback");f.hidden=false;f.textContent=(ok?"¡Correcto! ":"Respuesta incorrecta. ")+q.why;document.getElementById("next").disabled=false;});
  document.getElementById("next").onclick=()=>{quizIndex++;answered=false;renderQuiz();};
 }
-document.querySelectorAll(".region").forEach(btn=>btn.addEventListener("click",()=>{currentRegion=btn.dataset.region;document.querySelectorAll(".region").forEach(b=>b.classList.toggle("active",b===btn));selectedBone=null;renderBones();if(currentRegion==="general")renderGeneral();else{const first=bones.find(b=>b.region===currentRegion);if(first)showBone(first.id);else renderGeneral();}}));
+document.querySelectorAll(".region").forEach(btn=>btn.addEventListener("click",()=>{currentRegion=btn.dataset.region;document.querySelectorAll(".region").forEach(b=>b.classList.toggle("active",b===btn));selectedBone=null;renderBones();if(currentRegion==="general")renderGeneral();else{const first=bones.find(b=>b.region===currentRegion||(currentRegion==="cabeza_cuello"&&(b.region==="craneo"||b.id==="atlas"||b.id==="axis")));if(first)showBone(first.id);else renderGeneral();}}));
 document.getElementById("search").addEventListener("input",renderBones);
 document.getElementById("joint-region").addEventListener("change",renderJoints);
 renderGeneral();renderBones();renderJoints();renderQuiz();
