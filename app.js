@@ -24,6 +24,9 @@ const bones = [
 { id:"navicular", region:"toracico", name:"Hueso sesamoideo distal (navicular)", latin:"Os sesamoideum distale", type:"Hueso sesamoideo", location:"Cara palmar de la articulación interfalángica distal, dentro del casco.", description:"Hueso pequeño transversal que sirve como superficie de deslizamiento para el tendón flexor digital profundo.", landmarks:"Facies flexoria; facies articularis; bordes proximal y distal.", articulations:"Con la falange media y la falange distal en el contexto de la articulación interfalángica distal.", movements:"Acompaña la flexión-extensión distal y facilita el deslizamiento del tendón flexor digital profundo.", clinical:"Estructura central en el estudio del aparato podotroclear y del síndrome navicular."}
 ];
 
+// Carga fichas ampliadas del cráneo desde el módulo de contenido independiente.
+if (Array.isArray(window.VETANATOMY_SKULL_BONES)) bones.push(...window.VETANATOMY_SKULL_BONES.map(b => ({...b, illustration: b.region === "craneo" ? "assets/laminas/craneo-equino-topografia.svg" : b.illustration})));
+
 const joints = [
 {region:"cabeza",name:"Atlantooccipital",latin:"Articulatio atlantooccipitalis",bones:"Cóndilos occipitales y atlas.",type:"Sinovial condílea (elipsoidea).",movement:"Principalmente flexión y extensión de la cabeza; inclinación lateral limitada.",clinical:"La estabilidad depende de cápsulas y ligamentos craneocervicales."},
 {region:"cabeza",name:"Atlantoaxial",latin:"Articulatio atlantoaxialis",bones:"Atlas y axis (dens).",type:"Sinovial trocoide, con articulaciones asociadas.",movement:"Principalmente rotación axial de la cabeza; flexión-extensión limitada.",clinical:"Su relación estrecha con la médula espinal hace relevantes las lesiones y malformaciones."},
@@ -68,7 +71,7 @@ function renderBones(){
 function showBone(id){
  const b=bones.find(x=>x.id===id);if(!b)return;selectedBone=id;
  document.getElementById("detail-title").textContent=b.name;
- document.getElementById("detail-content").innerHTML=`<p class="latin-title">${esc(b.latin)}</p><p class="detail-intro">${esc(b.description)}</p><div class="detail-grid">
+ document.getElementById("detail-content").innerHTML=`${b.illustration?`<figure class="anatomy-figure"><img src="${esc(b.illustration)}" alt="Mapa topográfico del cráneo equino"><figcaption>Esquema topográfico original · vista lateral</figcaption></figure>`:""}<p class="latin-title">${esc(b.latin)}</p><p class="detail-intro">${esc(b.description)}</p><div class="detail-grid">
  ${fact("Clasificación",b.type)}${fact("Ubicación",b.location)}${fact("Accidentes anatómicos",b.landmarks)}${fact("Articulaciones",b.articulations)}${fact("Movimientos relacionados",b.movements)}${fact("Importancia clínica",b.clinical)}${b.attachments?fact("Relaciones musculares",b.attachments):""}${b.faces?fact("Caras",b.faces):""}${b.bordersAngles?fact("Bordes y ángulos",b.bordersAngles):""}${b.distalEnd?fact("Extremo articular",b.distalEnd):""}${b.equineTraits?fact("Rasgos propios del equino",b.equineTraits):""}${b.radiology?fact("Orientación radiológica y clínica",b.radiology):""}${b.studyViews?fact("Guía de estudio por vistas",b.studyViews):""}${b.atlasStatus?fact("Estado de la lámina",b.atlasStatus):""}</div>`;
  renderBones();document.getElementById("detail-panel").scrollIntoView({behavior:"smooth",block:"start"});
 }
