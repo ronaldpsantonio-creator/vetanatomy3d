@@ -43,3 +43,10 @@ button.system-card{cursor:pointer}
 .module-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0 14px}
 .back-button{border:1px solid #cbded3;background:#fff;color:#245444;border-radius:9px;padding:9px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 @media(max-width:560px){.system-grid{gap:8px}.system-card{min-height:142px;padding:12px}.system-card strong{font-size:14px}.module-toolbar .tag{font-size:9px}}
+
+
+/* V4 · Navegación interna del módulo */
+.module-tabs{display:flex;gap:7px;overflow-x:auto;padding:3px 0 12px;margin-bottom:8px}
+.module-tab{flex:1;min-width:max-content;border:1px solid var(--line);border-radius:10px;padding:10px 13px;background:#fff;color:var(--muted);font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.module-tab.active{background:var(--green);border-color:var(--green);color:#fff}
+.module-tab:focus-visible,.back-button:focus-visible,.system-card:focus-visible{outline:3px solid #85bba2;outline-offset:2px}
