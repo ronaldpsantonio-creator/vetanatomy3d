@@ -25,7 +25,8 @@ const bones = [
 ];
 
 // Carga fichas ampliadas del cráneo desde el módulo de contenido independiente.
-if (Array.isArray(window.VETANATOMY_SKULL_BONES)) bones.push(...window.VETANATOMY_SKULL_BONES.map(b => ({...b, illustration: b.region === "craneo" ? "assets/laminas/craneo-equino-topografia.svg" : b.illustration})));
+if (Array.isArray(window.VETANATOMY_SKULL_BONES)) bones.push(...window.VETANATOMY_SKULL_BONES);
+bones.forEach(b => { if (b.region === "craneo") b.illustration = "assets/laminas/craneo-equino-topografia.svg"; });
 
 const joints = [
 {region:"cabeza",name:"Atlantooccipital",latin:"Articulatio atlantooccipitalis",bones:"Cóndilos occipitales y atlas.",type:"Sinovial condílea (elipsoidea).",movement:"Principalmente flexión y extensión de la cabeza; inclinación lateral limitada.",clinical:"La estabilidad depende de cápsulas y ligamentos craneocervicales."},
