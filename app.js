@@ -1,5 +1,5 @@
 const bones = [
-{ id:"scapula", region:"toracico", name:"Escápula", latin:"Scapula", type:"Hueso plano", location:"Pared lateral del tórax craneal; forma la base ósea de la región del hombro.", description:"Hueso plano, triangular y amplio. En el caballo presenta una espina escapular marcada que divide la cara lateral en fosas supraespinosa e infraespinosa; distalmente termina en la cavidad glenoidea.", landmarks:"Spina scapulae; fossa supraspinata; fossa infraspinata; facies serrata; cavitas glenoidalis; tuberculum supraglenoidale; processus coracoideus (rudimentario).", articulations:"Con el húmero mediante la articulación del hombro (articulatio humeri). No existe articulación ósea directa con el tronco: se sostiene por sinsarcosis muscular.", movements:"Participa en el desplazamiento de la escápula sobre la pared torácica y en los movimientos del hombro; la amplitud depende de la musculatura y de la fase de apoyo.", clinical:"Referencia para palpación del hombro y evaluación de lesiones de la región escapular. La espina y los bordes sirven de referencias topográficas.", attachments:"Inserciones y orígenes de músculos escapulares y del miembro torácico; deben estudiarse por músculo en la unidad de miología."},
+{ id:"scapula", region:"toracico", name:"Escápula", latin:"Scapula", type:"Hueso plano", location:"Pared lateral del tórax craneal; forma la base ósea de la región del hombro.", description:"Hueso plano, triangular y amplio. En el caballo presenta una espina escapular marcada que divide la cara lateral en fosas supraespinosa e infraespinosa; distalmente termina en la cavidad glenoidea.", landmarks:"Spina scapulae; fossa supraspinata; fossa infraspinata; facies serrata; cavitas glenoidalis; tuberculum supraglenoidale; processus coracoideus (rudimentario).", articulations:"Con el húmero mediante la articulación del hombro (articulatio humeri). No existe articulación ósea directa con el tronco: se sostiene por sinsarcosis muscular.", movements:"Participa en el desplazamiento de la escápula sobre la pared torácica y en los movimientos del hombro; la amplitud depende de la musculatura y de la fase de apoyo.", clinical:"Referencia para palpación del hombro y evaluación de lesiones de la región escapular. La espina y los bordes sirven de referencias topográficas.", attachments:"La escápula sirve de origen o inserción a músculos que ocupan sus fosas y bordes: m. supraspinatus (fossa supraspinata), m. infraspinatus (fossa infraspinata), m. subscapularis (fossa subscapularis), m. serratus ventralis (facies serrata), y fijaciones del m. trapezius en la espina y tubérculo de la espina. El tuberculum supraglenoidale da origen al tendón del m. biceps brachii. La descripción músculo por músculo se ampliará en miología.", faces:"Facies lateralis: convexa y dividida por la spina scapulae en una fossa supraspinata craneal, menor, y una fossa infraspinata caudal, mayor. Facies costalis: aplicada a la pared torácica; presenta la fossa subscapularis y áreas rugosas de la facies serrata para la fijación del m. serratus ventralis.", bordersAngles:"Margo dorsalis: borde proximal, relacionado con la cartilago scapulae. Margo cranialis: más delgado y de contorno variable. Margo caudalis: generalmente más grueso. Angulus cranialis y angulus caudalis delimitan los extremos dorsales; angulus glenoidalis es el extremo distal articular y se continúa con el collum scapulae.", distalEnd:"La cavitas glenoidalis recibe la caput humeri. En su proximidad se encuentran el tuberculum supraglenoidale y el processus coracoideus, pequeño en el caballo. La región del cuello (collum scapulae) conecta el cuerpo con el extremo articular.", equineTraits:"En el caballo la spina scapulae no termina en un acromion; presenta un tuber spinae palpable. La escápula se prolonga dorsalmente mediante cartilago scapulae. La cintura torácica carece de una unión ósea directa con el tronco y se sostiene mediante sinsarcosis.", radiology:"En radiografías, identificar primero la orientación: borde dorsal y cartílago escapular proximal, cavidad glenoidea distal, espina en la cara lateral y fosa subescapular en la cara costal. El tuberculum supraglenoidale es una región clínicamente relevante; una fractura puede afectar la inserción del tendón del bíceps. La proyección y la superposición deben valorarse junto con la exploración clínica.", studyViews:"Vista lateral: reconocer spina scapulae, tuber spinae, fossa supraspinata y fossa infraspinata. Vista costal/medial: reconocer fossa subscapularis y facies serrata. Vista distal: estudiar cavitas glenoidalis, tuberculum supraglenoidale y processus coracoideus. Orientar siempre el hueso antes de nombrar los accidentes.", atlasStatus:"Ficha ampliada inicial. La lámina original numerada está en fase de revisión anatómica y no se considera todavía una figura validada para evaluación.";},
 { id:"humerus", region:"toracico", name:"Húmero", latin:"Humerus", type:"Hueso largo", location:"Entre la escápula y el radio-ulna, profundo a la musculatura braquial.", description:"Hueso largo con extremo proximal, cuerpo y extremo distal. Su extremo proximal presenta cabeza y tubérculos; distalmente forma cóndilo y superficies para la articulación del codo.", landmarks:"Caput humeri; tuberculum majus; tuberculum minus; sulcus intertubercularis; corpus humeri; tuberositas deltoidea; condylus humeri; epicondylus medialis et lateralis.", articulations:"Proximalmente con la cavidad glenoidea de la escápula; distalmente con radio y ulna en la articulación del codo.", movements:"Con la escápula permite principalmente flexión y extensión del hombro. En el codo participa en flexión y extensión.", clinical:"Importante en evaluación de hombro y codo, traumatismos y estudios radiográficos del brazo."},
 { id:"radius", region:"toracico", name:"Radio", latin:"Radius", type:"Hueso largo", location:"Región antebraquial; situado cranealmente respecto de la ulna.", description:"Principal hueso portante del antebrazo equino. Presenta extremos proximal y distal y un cuerpo relativamente recto.", landmarks:"Caput radii; circumferentia articularis; corpus radii; facies articularis carpalis; processus styloideus medialis.", articulations:"Con el húmero proximalmente; con los huesos del carpo distalmente; se relaciona con la ulna, que está reducida y fusionada en gran parte.", movements:"Forma parte del codo, que permite principalmente flexión y extensión; el caballo tiene pronación y supinación muy restringidas.", clinical:"Fracturas del radio y alteraciones del carpo afectan el soporte y la locomoción."},
 { id:"ulna", region:"toracico", name:"Ulna", latin:"Ulna", type:"Hueso largo reducido", location:"Caudolateral al radio; en el caballo está reducida y parcialmente fusionada con él.", description:"Hueso que conserva un olécranon prominente proximal, mientras que su cuerpo se reduce distalmente y se une al radio.", landmarks:"Olecranon; processus anconeus; incisura trochlearis; corpus ulnae reducido.", articulations:"Participa proximalmente en la articulación del codo con el húmero; mantiene unión anatómica con el radio.", movements:"Contribuye a la mecánica de flexión-extensión del codo; no permite movimientos amplios independientes.", clinical:"El olécranon es una prominencia palpable y zona de inserción del tríceps braquial."},
@@ -65,7 +65,7 @@ function showBone(id){
  const b=bones.find(x=>x.id===id);if(!b)return;selectedBone=id;
  document.getElementById("detail-title").textContent=b.name;
  document.getElementById("detail-content").innerHTML=`<p class="latin-title">${esc(b.latin)}</p><p class="detail-intro">${esc(b.description)}</p><div class="detail-grid">
- ${fact("Clasificación",b.type)}${fact("Ubicación",b.location)}${fact("Accidentes anatómicos",b.landmarks)}${fact("Articulaciones",b.articulations)}${fact("Movimientos relacionados",b.movements)}${fact("Importancia clínica",b.clinical)}${b.attachments?fact("Relaciones musculares",b.attachments):""}</div>`;
+ ${fact("Clasificación",b.type)}${fact("Ubicación",b.location)}${fact("Accidentes anatómicos",b.landmarks)}${fact("Articulaciones",b.articulations)}${fact("Movimientos relacionados",b.movements)}${fact("Importancia clínica",b.clinical)}${b.attachments?fact("Relaciones musculares",b.attachments):""}${b.faces?fact("Caras",b.faces):""}${b.bordersAngles?fact("Bordes y ángulos",b.bordersAngles):""}${b.distalEnd?fact("Extremo articular",b.distalEnd):""}${b.equineTraits?fact("Rasgos propios del equino",b.equineTraits):""}${b.radiology?fact("Orientación radiológica y clínica",b.radiology):""}${b.studyViews?fact("Guía de estudio por vistas",b.studyViews):""}${b.atlasStatus?fact("Estado de la lámina",b.atlasStatus):""}</div>`;
  renderBones();document.getElementById("detail-panel").scrollIntoView({behavior:"smooth",block:"start"});
 }
 function fact(label,value){return `<div class="fact"><b>${esc(label)}</b><p>${esc(value)}</p></div>`;}
@@ -90,3 +90,36 @@ document.querySelectorAll(".region").forEach(btn=>btn.addEventListener("click",(
 document.getElementById("search").addEventListener("input",renderBones);
 document.getElementById("joint-region").addEventListener("change",renderJoints);
 renderGeneral();renderBones();renderJoints();renderQuiz();
+
+
+// V4 · Navegación del menú principal y módulo esquelético
+const homeScreen=document.getElementById("system-home");
+const skeletalScreen=document.getElementById("system-skeletal");
+document.getElementById("open-skeletal").addEventListener("click",()=>{
+  homeScreen.hidden=true;
+  skeletalScreen.hidden=false;
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+document.getElementById("back-home").addEventListener("click",()=>{
+  skeletalScreen.hidden=true;
+  homeScreen.hidden=false;
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+
+
+// Navegación interna del módulo esquelético
+function setModuleView(view){
+  document.querySelectorAll("[data-module-view]").forEach(section=>{
+    section.hidden=section.dataset.moduleView!==view;
+  });
+  document.querySelectorAll(".module-tab").forEach(tab=>{
+    const active=tab.dataset.view===view;
+    tab.classList.toggle("active",active);
+    tab.setAttribute("aria-selected",String(active));
+  });
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+document.querySelectorAll(".module-tab").forEach(tab=>{
+  tab.addEventListener("click",()=>setModuleView(tab.dataset.view));
+});
+setModuleView("osteology");
