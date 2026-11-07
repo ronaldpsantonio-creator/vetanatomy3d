@@ -1,5 +1,5 @@
-const CACHE_NAME = "vetanatomy3d-v46-lamina-craneo";
-const FILES = ["./", "./index.html", "./styles.css", "./app.js", "./osteologia-craneo.js", "./assets/laminas/craneo-equino-topografia.svg", "./assets/laminas/cranio-equino-vista-lateral.svg", "./manifest.webmanifest"];
+const CACHE_NAME = "vetanatomy3d-v47-craneo-tres-vistas";
+const FILES = ["./", "./index.html", "./styles.css", "./app.js", "./osteologia-craneo.js", "./assets/laminas/craneo-equino-topografia.svg", "./assets/laminas/cranio-equino-vista-lateral.svg", "./assets/laminas/cranio-equino-vista-dorsal.svg", "./assets/laminas/cranio-equino-vista-ventral.svg", "./manifest.webmanifest"];
 self.addEventListener("install", event => { event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener("activate", event => { event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))))); self.clients.claim(); });
 self.addEventListener("fetch", event => {
