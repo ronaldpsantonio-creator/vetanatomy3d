@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Cráneo equino: mapa esquemático de regiones óseas</title>
+<desc id="desc">Esquema original de orientación lateral del cráneo de un caballo, con regiones del neurocráneo y esqueleto facial diferenciadas por color y llamadas identificativas.</desc>
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfaf6"/><stop offset="1" stop-color="#f0eee6"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#253342" flood-opacity=".12"/></filter>
+  <style>
+    .label{font:600 18px Arial,sans-serif;fill:#243344}.latin{font:italic 15px Georgia,serif;fill:#425466}
+    .call{fill:none;stroke:#425466;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+    .dot{fill:#243344}.bone{stroke:#665e50;stroke-width:3;stroke-linejoin:round}
+    .small{font:14px Arial,sans-serif;fill:#536273}
+  </style>
+</defs>
+<rect width="1200" height="760" rx="28" fill="url(#paper)"/>
+<text x="54" y="62" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#203247">CRÁNEO EQUINO · VISTA LATERAL</text>
+<text x="56" y="92" font-family="Arial,sans-serif" font-size="17" fill="#607080">Mapa original de orientación anatómica · esquema didáctico, no a escala</text>
+
+<!-- Silueta ósea lateral esquemática -->
+<g filter="url(#shadow)">
+  <!-- occipital -->
+  <path class="bone" fill="#c7d5e4" d="M185 205 Q155 245 165 315 L194 365 Q225 374 258 349 L278 270 Q250 220 185 205Z"/>
+  <!-- parietal -->
+  <path class="bone" fill="#b9c8e0" d="M210 205 Q270 143 374 150 Q424 156 453 208 L410 270 L278 270 Q250 220 210 205Z"/>
+  <!-- frontal -->
+  <path class="bone" fill="#d9c7a5" d="M374 150 Q480 136 570 170 Q620 191 634 240 L550 284 L410 270 L453 208Z"/>
+  <!-- nasal -->
+  <path class="bone" fill="#e8d7a8" d="M570 170 Q690 162 800 205 Q850 225 895 265 L824 292 L634 240 Q620 191 570 170Z"/>
+  <!-- incisive -->
+  <path class="bone" fill="#d8bda0" d="M824 292 Q895 265 933 293 Q949 316 927 339 L855 345 L796 322Z"/>
+  <!-- maxilla -->
+  <path class="bone" fill="#d9c2b7" d="M550 284 L634 240 L824 292 L855 345 L801 411 L610 405 L520 355Z"/>
+  <!-- lacrimal -->
+  <path class="bone" fill="#b9d6cb" d="M520 250 L578 239 L610 285 L577 321 L528 304Z"/>
+  <!-- zygomatic -->
+  <path class="bone" fill="#b8d0bd" d="M510 325 Q555 307 600 335 L620 378 L570 397 L520 374Z"/>
+  <!-- temporal -->
+  <path class="bone" fill="#c7c5dc" d="M278 270 L410 270 L520 284 L520 355 L470 386 L340 374 L258 349Z"/>
+  <!-- orbit -->
+  <ellipse cx="545" cy="292" rx="62" ry="77" fill="#f6f3eb" stroke="#756b5b" stroke-width="8"/>
+  <ellipse cx="545" cy="292" rx="43" ry="57" fill="#e9e5d9" stroke="#b4aa98" stroke-width="2"/>
+  <!-- zygomatic arch -->
+  <path d="M505 347 Q590 405 681 363 Q715 346 729 320" fill="none" stroke="#887d69" stroke-width="22" stroke-linecap="round"/>
+  <path d="M505 347 Q590 405 681 363 Q715 346 729 320" fill="none" stroke="#d5c7a8" stroke-width="14" stroke-linecap="round"/>
+  <!-- mandible -->
+  <path class="bone" fill="#d7c3ad" d="M340 395 Q445 427 565 435 Q680 442 778 425 L806 459 Q760 506 668 520 L470 508 Q389 495 335 449Z"/>
+  <path class="bone" fill="#d7c3ad" d="M335 449 Q320 480 343 500 Q390 526 470 508 L458 485 Q393 484 367 458Z"/>
+  <!-- teeth -->
+  <g fill="#fffdf5" stroke="#857a68" stroke-width="2">
+    <path d="M615 406 l22 0 2 26 -19 0Z"/><path d="M644 409 l22 0 2 27 -19 0Z"/><path d="M673 410 l22 0 2 26 -19 0Z"/><path d="M702 408 l22 0 2 26 -19 0Z"/>
+    <path d="M612 482 l22 0 2 24 -19 0Z"/><path d="M642 488 l22 0 2 24 -19 0Z"/><path d="M672 488 l22 0 2 23 -19 0Z"/>
+  </g>
+  <!-- facial crest -->
+  <path d="M635 344 Q730 345 812 365" stroke="#8d785e" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- nasal notch -->
+  <path d="M895 265 Q912 278 908 294" fill="none" stroke="#756b5b" stroke-width="3"/>
+</g>
+
+<!-- Orientation -->
+<text x="150" y="570" class="small">CAUDAL</text><path d="M220 565 H340" class="call"/><path d="M340 565 l-12 -7 m12 7 l-12 7" class="call"/>
+<text x="805" y="570" class="small">ROSTRAL</text><path d="M785 565 H665" class="call"/><path d="M665 565 l12 -7 m-12 7 l12 7" class="call"/>
+
+<!-- Callouts -->
+<g>
+ <path class="call" d="M215 218 L130 155 L65 155"/><circle class="dot" cx="215" cy="218" r="5"/><text class="label" x="65" y="133">Occipital</text><text class="latin" x="65" y="176">Os occipitale</text>
+ <path class="call" d="M326 183 L326 125 L260 125"/><circle class="dot" cx="326" cy="183" r="5"/><text class="label" x="260" y="105">Parietal</text><text class="latin" x="260" y="145">Os parietale</text>
+ <path class="call" d="M495 183 L495 118 L520 118"/><circle class="dot" cx="495" cy="183" r="5"/><text class="label" x="520" y="98">Frontal</text><text class="latin" x="520" y="138">Os frontale</text>
+ <path class="call" d="M720 195 L775 135 L860 135"/><circle class="dot" cx="720" cy="195" r="5"/><text class="label" x="860" y="115">Nasal</text><text class="latin" x="860" y="155">Os nasale</text>
+ <path class="call" d="M890 312 L990 285 L1060 285"/><circle class="dot" cx="890" cy="312" r="5"/><text class="label" x="1000" y="264">Incisivo</text><text class="latin" x="1000" y="304">Os incisivum</text>
+ <path class="call" d="M735 360 L855 405 L1000 405"/><circle class="dot" cx="735" cy="360" r="5"/><text class="label" x="1000" y="385">Maxilar</text><text class="latin" x="1000" y="425">Maxilla</text>
+ <path class="call" d="M554 260 L550 220 L610 220"/><circle class="dot" cx="554" cy="260" r="5"/><text class="label" x="610" y="200">Lagrimal</text><text class="latin" x="610" y="240">Os lacrimale</text>
+ <path class="call" d="M570 377 L570 455 L620 455"/><circle class="dot" cx="570" cy="377" r="5"/><text class="label" x="620" y="448">Cigomático / arco</text><text class="latin" x="620" y="475">Os zygomaticum</text>
+ <path class="call" d="M410 320 L335 420 L225 420"/><circle class="dot" cx="410" cy="320" r="5"/><text class="label" x="95" y="405">Temporal</text><text class="latin" x="95" y="445">Os temporale</text>
+ <path class="call" d="M590 495 L590 548 L520 548"/><circle class="dot" cx="590" cy="495" r="5"/><text class="label" x="405" y="542">Mandíbula</text><text class="latin" x="405" y="580">Mandibula</text>
+</g>
+
+<rect x="56" y="630" width="1088" height="76" rx="14" fill="#e5e8e7" stroke="#c7cfce"/>
+<text x="78" y="660" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#33495a">NOTA DIDÁCTICA</text>
+<text x="78" y="686" font-family="Arial,sans-serif" font-size="15" fill="#425466">Mapa simplificado para orientar regiones; las suturas y límites reales son más complejos. No usar como lámina de identificación fina ni para diagnóstico.</text>
+</svg>
