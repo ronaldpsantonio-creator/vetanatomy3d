@@ -110,6 +110,26 @@
 <footer>VETANATOMY 3D · Proyecto educativo gratuito · Versión 4.0 en desarrollo</footer>
 <script src="app.js"></script>
 <script>
+// Navegación principal independiente de la inicialización del catálogo.
+(() => {
+  const home = document.getElementById("system-home");
+  const skeletal = document.getElementById("system-skeletal");
+  const open = document.getElementById("open-skeletal");
+  const back = document.getElementById("back-home");
+  if (!home || !skeletal || !open || !back) return;
+  open.addEventListener("click", () => {
+    home.hidden = true;
+    skeletal.hidden = false;
+    window.scrollTo(0, 0);
+  });
+  back.addEventListener("click", () => {
+    skeletal.hidden = true;
+    home.hidden = false;
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
+<script>
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
   window.addEventListener("load", () => navigator.serviceWorker.register("./service-worker.js").catch(() => {}));
 }
