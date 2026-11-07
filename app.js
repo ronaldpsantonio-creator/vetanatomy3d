@@ -105,3 +105,20 @@ document.getElementById("back-home").addEventListener("click",()=>{
   homeScreen.hidden=false;
   window.scrollTo({top:0,behavior:"smooth"});
 });
+
+
+// Navegación interna del módulo esquelético
+function setModuleView(view){
+  document.querySelectorAll("[data-module-view]").forEach(section=>{
+    section.hidden=section.dataset.moduleView!==view;
+  });
+  document.querySelectorAll(".module-tab").forEach(tab=>{
+    const active=tab.dataset.view===view;
+    tab.classList.toggle("active",active);
+    tab.setAttribute("aria-selected",String(active));
+  });
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+document.querySelectorAll(".module-tab").forEach(tab=>{
+  tab.addEventListener("click",()=>setModuleView(tab.dataset.view));
+});
