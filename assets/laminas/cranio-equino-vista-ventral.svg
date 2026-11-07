@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-labelledby="t d">
+<title id="t">Cráneo equino, vista ventral esquemática</title><desc id="d">Lámina docente original de la base craneal, paladar duro y región esfenoidal del caballo.</desc>
+<rect width="1100" height="760" fill="#f7f6ef"/><text x="55" y="58" font-family="Arial" font-size="28" font-weight="700" fill="#183d37">CRÁNEO EQUINO · VISTA VENTRAL</text><text x="56" y="88" font-family="Arial" font-size="16" fill="#53665f">Paladar duro, base craneal y referencias de la región caudal</text>
+<g stroke="#554b3e" stroke-width="5" stroke-linejoin="round">
+<path d="M440 120 Q550 90 660 120 L700 220 L650 300 L450 300 L400 220Z" fill="#d7b38f"/>
+<path d="M455 290 Q550 265 645 290 L630 390 L470 390Z" fill="#c8d5df"/>
+<path d="M470 385 Q550 360 630 385 L620 515 Q550 545 480 515Z" fill="#d9c49f"/>
+<path d="M485 510 Q550 530 615 510 L605 620 Q550 670 495 620Z" fill="#d8b7a0"/>
+<path d="M430 200 Q365 220 350 300 L400 360 L470 320Z" fill="#c8d9bd"/>
+<path d="M670 200 Q735 220 750 300 L700 360 L630 320Z" fill="#c8d9bd"/>
+<path d="M475 385 Q550 405 625 385" fill="none" stroke="#8d765d" stroke-width="3" stroke-dasharray="8 7"/>
+<path d="M495 620 Q550 645 605 620" fill="none" stroke="#8d765d" stroke-width="3"/>
+</g>
+<g fill="#f7f6ef" stroke="#554b3e" stroke-width="5"><ellipse cx="550" cy="160" rx="36" ry="25"/><ellipse cx="550" cy="225" rx="24" ry="16"/></g>
+<g stroke="#52665e" stroke-width="2.5" fill="none"><path d="M550 105 L550 660" stroke-dasharray="9 7"/><path d="M430 250 L210 190"/><path d="M670 250 L885 190"/><path d="M490 345 L205 365"/><path d="M610 345 L895 365"/><path d="M550 455 L860 480"/><path d="M550 575 L850 620"/></g>
+<g font-family="Arial" font-size="19" font-weight="700" fill="#213b35" stroke="#f7f6ef" stroke-width="5" paint-order="stroke">
+<text x="75" y="185">Occipital</text><text x="890" y="185">Foramen magno</text><text x="75" y="365">Proceso pterigoideo</text><text x="900" y="365">Región esfenoidal</text><text x="870" y="485">Palatino</text><text x="865" y="625">Proceso palatino del maxilar</text><text x="70" y="640">Hueso incisivo</text>
+</g><g font-family="Arial" font-size="15" fill="#456057"><text x="70" y="700">CAUDAL ↑</text><text x="875" y="700">↓ ROSTRAL</text><text x="265" y="735">Esquema de orientación; verificar detalles en material osteológico y bibliografía.</text></g></svg>
